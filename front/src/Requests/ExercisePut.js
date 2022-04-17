@@ -60,6 +60,22 @@ export default function ExercisePut() {
           type="text"
         ></Form.Control>
         <p>
+          Тип снаряжения:
+          <select
+            onChange={(e) => handle(e)}
+            class="dropdown"
+            id="id_equipment_type"
+          >
+            <option value="1">Гири</option>
+            <option value="2">Штанга</option>
+            <option value="3">Отсутствует</option>
+            <option value="4">Гантели</option>
+            <option value="5">Тренажёр</option>
+            <option value="6">Беговая дорожка</option>
+            <option value="7">Велотренажёр</option>
+          </select>
+        </p>
+        <p>
           Группа мышц:
           <select
             onChange={(e) => handle(e)}
@@ -83,22 +99,6 @@ export default function ExercisePut() {
           placeholder="id группы мышц"
           type="number"
         ></Form.Control> */}
-        <p>
-          Тип снаряжения:
-          <select
-            onChange={(e) => handle(e)}
-            class="dropdown"
-            id="id_equipment_type"
-          >
-            <option value="1">Гири</option>
-            <option value="2">Штанга</option>
-            <option value="3">Отсутствует</option>
-            <option value="4">Гантели</option>
-            <option value="5">Тренажёр</option>
-            <option value="6">Беговая дорожка</option>
-            <option value="7">Велотренажёр</option>
-          </select>
-        </p>
 
         <p>
           Уровень сложности:
