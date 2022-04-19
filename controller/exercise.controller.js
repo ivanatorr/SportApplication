@@ -14,7 +14,7 @@ class exerciseController {
     } = req.body;
     const newExercise = await db
       .query(
-        "INSERT INTO exercise (exercise_name, id_muscle_group, id_equipment_type, id_diff_lvl, id_exercise_type, num_reps, time_reps) values ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+        "INSERT INTO exercise (exercise_name, id_muscle_group, id_equipment_type, id_diff_lvl, id_exercise_type, num_reps, time_reps, health_restriction_id) values ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
         [
           exercise_name,
           id_muscle_group,

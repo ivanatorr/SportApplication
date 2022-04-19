@@ -108,10 +108,10 @@ export default function ExercisePost() {
             class="dropdown"
             id="id_exercise_type"
           >
-            <option value="1">Силовое</option>
             <option value="2">Растяжка</option>
             <option value="3">Кардио</option>
             <option value="4">Палиометрический</option>
+            <option value="1">Силовое</option>
           </select>
         </p>
 
